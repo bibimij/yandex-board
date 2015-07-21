@@ -1,8 +1,0 @@
-.departure {
-  display: none;
-}
-
-#departure-checkbox:checked ~ .board > tbody > .departure {
-  /*display: block;*/
-  background: #ddd;
-}

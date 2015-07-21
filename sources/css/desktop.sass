@@ -1,0 +1,28 @@
+body
+  font-family: Arial,Helvetica,sans-serif
+
+.departure,
+.arrival
+  display: none
+
+.departure
+  .airport:before
+    content: '\21d7'
+    margin-right: 5px
+
+.arrival
+  .airport:after
+    content: '\21d8'
+    margin-left: 5px
+
+#departure-checkbox
+  &:checked
+    ~ .board
+      > tbody > .departure
+        display: table-row
+
+#arrival-checkbox
+  &:checked
+    ~ .board
+      > tbody > .arrival
+        display: table-row
