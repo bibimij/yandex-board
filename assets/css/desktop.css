@@ -1,0 +1,35 @@
+/* line 1, ../../sources/css/desktop.sass */
+.board {
+  overflow: hidden; }
+  /* line 4, ../../sources/css/desktop.sass */
+  .board td, .board th {
+    position: relative; }
+    /* line 7, ../../sources/css/desktop.sass */
+    .board td:hover::after, .board th:hover::after {
+      content: "";
+      position: absolute;
+      background: rgba(211, 211, 211, 0.5);
+      left: 0;
+      top: -5000px;
+      height: 10000px;
+      width: 100%;
+      z-index: -1; }
+    /* line 17, ../../sources/css/desktop.sass */
+    .board td:nth-child(4), .board th:nth-child(4) {
+      display: table-cell; }
+  /* line 22, ../../sources/css/desktop.sass */
+  .board tbody tr:hover {
+    background: #ddd; }
+  /* line 25, ../../sources/css/desktop.sass */
+  .board .airport-name {
+    display: inline; }
+  /* line 28, ../../sources/css/desktop.sass */
+  .board .aircraft {
+    display: block; }
+  /* line 31, ../../sources/css/desktop.sass */
+  .board .aircraft-short {
+    display: none; }
+  /* line 34, ../../sources/css/desktop.sass */
+  .board .airline {
+    font-size: 16px;
+    float: none; }

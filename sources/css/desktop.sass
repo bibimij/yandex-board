@@ -1,28 +1,36 @@
-body
-  font-family: Arial,Helvetica,sans-serif
+.board
+  overflow: hidden
 
-.departure,
-.arrival
-  display: none
+  td, th
+    position: relative
 
-.departure
-  .airport:before
-    content: '\21d7'
-    margin-right: 5px
+    &:hover::after
+      content: ''
+      position: absolute
+      background: rgba(211, 211, 211, 0.5)
+      left: 0
+      top: -5000px
+      height: 10000px
+      width: 100%
+      z-index: -1
 
-.arrival
-  .airport:after
-    content: '\21d8'
-    margin-left: 5px
+    &:nth-child(4)
+      display: table-cell
 
-#departure-checkbox
-  &:checked
-    ~ .board
-      > tbody > .departure
-        display: table-row
+  tbody
+    tr
+      &:hover
+        background: #ddd
 
-#arrival-checkbox
-  &:checked
-    ~ .board
-      > tbody > .arrival
-        display: table-row
+  .airport-name
+    display: inline
+
+  .aircraft
+    display: block
+
+  .aircraft-short
+    display: none
+
+  .airline
+    font-size: 16px
+    float: none

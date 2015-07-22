@@ -1,0 +1,51 @@
+/* line 1, ../../sources/css/airlines.sass */
+.airline:before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 5px; }
+
+/* line 8, ../../sources/css/airlines.sass */
+.airberlin:before {
+  background: url("https://www.airberlin.com/favicon.ico") no-repeat; }
+
+/* line 11, ../../sources/css/airlines.sass */
+.elal:before {
+  background: url("http://www.elal.com/_layouts/15/images/Matrix.Elal.com/fabicon.png") no-repeat; }
+
+/* line 14, ../../sources/css/airlines.sass */
+.metrojet:before {
+  background: url("") no-repeat; }
+
+/* line 17, ../../sources/css/airlines.sass */
+.s7:before {
+  background: url("http://www.s7.ru/favicons/favicon-16x16.png") no-repeat; }
+
+/* line 20, ../../sources/css/airlines.sass */
+.swissair:before {
+  background: url("http://www.swissair.com/img/favicons/favicon-64x64.png") no-repeat; }
+
+/* line 23, ../../sources/css/airlines.sass */
+.transaero:before {
+  background: url("http://www.transaero.ru/wps/themes/html/TransaeroTheme/images/favicon.ico") no-repeat; }
+
+/* line 26, ../../sources/css/airlines.sass */
+.ural:before {
+  background: url("") no-repeat; }
+
+/* line 29, ../../sources/css/airlines.sass */
+.utair:before {
+  background: url("http://www.utair.ru/images/favicon.ico") no-repeat; }
+
+/* line 32, ../../sources/css/airlines.sass */
+.uz:before {
+  background: url("https://www.uzairways.com/sites/default/files/favicon_0.ico") no-repeat; }
+
+/* line 35, ../../sources/css/airlines.sass */
+.vimavia:before {
+  background: url("http://www.vim-avia.com/favicon.ico") no-repeat; }
+
+/* line 38, ../../sources/css/airlines.sass */
+.yamal:before {
+  background: url("http://yamal.aero/favicon.ico") no-repeat; }
