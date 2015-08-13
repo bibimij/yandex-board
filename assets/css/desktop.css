@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../../sources/css/desktop.sass */
 .board {
   overflow: hidden; }
@@ -19,17 +20,16 @@
       display: table-cell; }
   /* line 22, ../../sources/css/desktop.sass */
   .board tbody tr:hover {
-    background: #ddd; }
-  /* line 25, ../../sources/css/desktop.sass */
-  .board .airport-name {
-    display: inline; }
-  /* line 28, ../../sources/css/desktop.sass */
-  .board .aircraft {
-    display: block; }
-  /* line 31, ../../sources/css/desktop.sass */
-  .board .aircraft-short {
-    display: none; }
-  /* line 34, ../../sources/css/desktop.sass */
-  .board .airline {
-    font-size: 16px;
-    float: none; }
+    background: rgba(211, 211, 211, 0.5); }
+  /* line 26, ../../sources/css/desktop.sass */
+  .board ul li {
+    display: inline-block; }
+    /* line 29, ../../sources/css/desktop.sass */
+    .board ul li:after {
+      content: "; "; }
+  /* line 33, ../../sources/css/desktop.sass */
+  .board ul .airline:after {
+    content: ""; }
+  /* line 37, ../../sources/css/desktop.sass */
+  .board .arrival .airport:after {
+    content: "⇘; "; }

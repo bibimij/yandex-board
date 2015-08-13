@@ -2,476 +2,478 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Табло аэропорта Домодедово. 21 июля, 01:10</title>
+  <title>Александр Милёхин — Табло аэропорта Домодедово. 21 июля, 01:10</title>
 
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-  <h1>Табло аэропорта Домодедово, 01:10</h1>
+  <div class="content">
+    <h1>Табло аэропорта Домодедово. 21 июля, 01:10</h1>
 
-  <input type="checkbox" name="type" id="departure-checkbox" checked><label for="departure-checkbox">вылет</label>
-  <input type="checkbox" name="type" id="arrival-checkbox" checked><label for="arrival-checkbox">прилёт</label>
+    <input type="checkbox" name="type" id="departure-checkbox" class="fixed" checked><label for="departure-checkbox" class="fixed">⇗ вылет</label>
+    <input type="checkbox" name="type" id="arrival-checkbox" class="fixed" checked><label for="arrival-checkbox" class="fixed">прилёт ⇘</label>
 
-  <table class="board" cellpadding="0" cellspacing="0">
-    <thead>
-      <tr>
-        <th>Рейс</th>
-        <th>Расписание</th>
-        <th>Статус</th>
-        <th>Примечание</th>
-      </tr>
-    </thead>
-    <!-- Вылеты -->
-    <tbody>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">S7 201</li>
-            <li class="airport"><span class="airport-name">а/п Рощино, </span>Тюмень</li>
-            <li class="aircraft">Airbus A319</li>
-            <li class="airline s7">S7 Airlines</li>
-            <li class="aircraft-short">А319</li>
-          </ul>
-        </td>
-        <td>
-          <strike>00:20, 21&nbsp;июля</strike>
-          00:55, 21&nbsp;июля
-        </td>
-        <td>
-          отправлен
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">UN 125</li>
-            <li class="airport"><span class="airport-name">а/п Омск, </span>Омск</li>
-            <li class="aircraft">Boeing 737-400</li>
-            <li class="airline transaero">Трансаэро</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          <strike>00:25</strike>
-          02:30
-        </td>
-        <td>
-          опаздывает
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">UT 4125</li>
-            <li class="airport"><span class="airport-name">а/п Омск, </span>Омск</li>
-            <li class="aircraft">Boeing 737-400</li>
-            <li class="airline utair">ЮТэйр</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          <strike>00:25</strike>
-          02:30
-        </td>
-        <td>
-          опаздывает
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">LY 610</li>
-            <li class="airport"><span class="airport-name">а/п Бен Гурион, </span>Тель-Авив</li>
-            <li class="aircraft">Boeing 737-800</li>
-            <li class="airline elal">El Al</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          <strike>00:30</strike>
-          01:04
-        </td>
-        <td>
-          отправлен
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">UN 119</li>
-            <li class="airport"><span class="airport-name">а/п Кольцово, </span>Екатеринбург</li>
-            <li class="aircraft">Boeing 737-500</li>
-            <li class="airline transaero">Трансаэро</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          <strike>00:30</strike>
-          02:35
-        </td>
-        <td>
-          опаздывает
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">S7 425</li>
-            <li class="airport"><span class="airport-name">а/п Нижневартовск, </span>Нижневартовск</li>
-            <li class="aircraft">Airbus A319</li>
-            <li class="airline s7">S7 Airlines</li>
-            <li class="aircraft-short">А319</li>
-          </ul>
-        </td>
-        <td>
-          <strike>00:50</strike>
-          01:02
-        </td>
-        <td>
-          отправлен
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">S7 969</li>
-            <li class="airport"><span class="airport-name">а/п им. Сапармурата Туркменбаши, </span>Ашхабад</li>
-            <li class="aircraft">Airbus А320</li>
-            <li class="airline s7">S7 Airlines</li>
-            <li class="aircraft-short">А320</li>
-          </ul>
-        </td>
-        <td>
-          01:30
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">S7 907</li>
-            <li class="airport"><span class="airport-name">а/п Звартноц, </span>Ереван</li>
-            <li class="aircraft">Airbus А319</li>
-            <li class="airline s7">S7 Airlines</li>
-            <li class="aircraft-short">А319</li>
-          </ul>
-        </td>
-        <td>
-          01:40
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">NN 335</li>
-            <li class="airport"><span class="airport-name">а/п Центральный, </span>Симферополь</li>
-            <li class="aircraft">Airbus А319</li>
-            <li class="airline vimavia">ВИМ-Авиа</li>
-            <li class="aircraft-short">А319</li>
-          </ul>
-        </td>
-        <td>
-          01:40
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">HY 620</li>
-            <li class="airport"><span class="airport-name">а/п Наманган, </span>Наманган</li>
-            <li class="aircraft">Airbus А320</li>
-            <li class="airline uz">UZ Airways</li>
-            <li class="aircraft-short">А320</li>
-          </ul>
-        </td>
-        <td>
-          02:00
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">S7 419</li>
-            <li class="airport"><span class="airport-name">а/п Ягельное, </span>Новый Уренгой</li>
-            <li class="aircraft">Boeing 737-800</li>
-            <li class="airline s7">S7 Airlines</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          02:00
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">U6 3015</li>
-            <li class="airport"><span class="airport-name">а/п Интернэшнл, </span>Шарм-эль-Шейх</li>
-            <li class="aircraft">Airbus А321</li>
-            <li class="airline ural">Уральские Авиалинии</li>
-            <li class="aircraft-short">А321</li>
-          </ul>
-        </td>
-        <td>
-          02:15
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">HY 606</li>
-            <li class="airport"><span class="airport-name">а/п Самарканд, </span>Самарканд</li>
-            <li class="aircraft">Airbus А320</li>
-            <li class="airline uz">UZ Airways</li>
-            <li class="aircraft-short">А320</li>
-          </ul>
-        </td>
-        <td>
-          02:45
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">YC 173</li>
-            <li class="airport"><span class="airport-name">а/п Надым, </span>Надым</li>
-            <li class="aircraft">Boeing 737-400</li>
-            <li class="airline yamal">Ямал</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          03:05
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="departure">
-        <td>
-          <ul>
-            <li class="flight-number">YC 32</li>
-            <li class="airport"><span class="airport-name">а/п Салехард, </span>Салехард</li>
-            <li class="aircraft">Airbus А320</li>
-            <li class="airline yamal">Ямал</li>
-            <li class="aircraft-short">А320</li>
-          </ul>
-        </td>
-        <td>
-          03:10
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
+    <table class="board" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Рейс <div>Рейс</div></th>
+          <th>Расписание <div>Расписание</div></th>
+          <th>Статус <div>Статус</div></th>
+          <th>Примечание <div>Примечание</div></th>
+        </tr>
+      </thead>
+      <!-- Вылеты -->
+      <tbody>
+        <tr class="departure" id="departure-1">
+          <td>
+            <ul>
+              <li class="flight-number">S7 201</li>
+              <li class="airport"><span class="airport-name">а/п Рощино, </span>Тюмень</li>
+              <li class="aircraft">Airbus A319</li>
+              <li class="airline s7">S7 Airlines</li>
+              <li class="aircraft-short">А319</li>
+            </ul>
+          </td>
+          <td>
+            <strike>00:20, 21&nbsp;июля</strike>
+            00:55, 21&nbsp;июля
+          </td>
+          <td>
+            отправлен
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">UN 125</li>
+              <li class="airport"><span class="airport-name">а/п Омск, </span>Омск</li>
+              <li class="aircraft">Boeing 737-400</li>
+              <li class="airline transaero">Трансаэро</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            <strike>00:25</strike>
+            02:30
+          </td>
+          <td>
+            опаздывает
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">UT 4125</li>
+              <li class="airport"><span class="airport-name">а/п Омск, </span>Омск</li>
+              <li class="aircraft">Boeing 737-400</li>
+              <li class="airline utair">ЮТэйр</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            <strike>00:25</strike>
+            02:30
+          </td>
+          <td>
+            опаздывает
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">LY 610</li>
+              <li class="airport"><span class="airport-name">а/п Бен Гурион, </span>Тель-Авив</li>
+              <li class="aircraft">Boeing 737-800</li>
+              <li class="airline elal">El Al</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            <strike>00:30</strike>
+            01:04
+          </td>
+          <td>
+            отправлен
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">UN 119</li>
+              <li class="airport"><span class="airport-name">а/п Кольцово, </span>Екатеринбург</li>
+              <li class="aircraft">Boeing 737-500</li>
+              <li class="airline transaero">Трансаэро</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            <strike>00:30</strike>
+            02:35
+          </td>
+          <td>
+            опаздывает
+          </td>
+          <td>Какое-то примечание</td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">S7 425</li>
+              <li class="airport"><span class="airport-name">а/п Нижневартовск, </span>Нижневартовск</li>
+              <li class="aircraft">Airbus A319</li>
+              <li class="airline s7">S7 Airlines</li>
+              <li class="aircraft-short">А319</li>
+            </ul>
+          </td>
+          <td>
+            <strike>00:50</strike>
+            01:02
+          </td>
+          <td>
+            отправлен
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">S7 969</li>
+              <li class="airport"><span class="airport-name">а/п им. Сапармурата Туркменбаши, </span>Ашхабад</li>
+              <li class="aircraft">Airbus А320</li>
+              <li class="airline s7">S7 Airlines</li>
+              <li class="aircraft-short">А320</li>
+            </ul>
+          </td>
+          <td>
+            01:30
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">S7 907</li>
+              <li class="airport"><span class="airport-name">а/п Звартноц, </span>Ереван</li>
+              <li class="aircraft">Airbus А319</li>
+              <li class="airline s7">S7 Airlines</li>
+              <li class="aircraft-short">А319</li>
+            </ul>
+          </td>
+          <td>
+            01:40
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td>Всегда опаздывает</td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">NN 335</li>
+              <li class="airport"><span class="airport-name">а/п Центральный, </span>Симферополь</li>
+              <li class="aircraft">Airbus А319</li>
+              <li class="airline vimavia">ВИМ-Авиа</li>
+              <li class="aircraft-short">А319</li>
+            </ul>
+          </td>
+          <td>
+            01:40
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">HY 620</li>
+              <li class="airport"><span class="airport-name">а/п Наманган, </span>Наманган</li>
+              <li class="aircraft">Airbus А320</li>
+              <li class="airline uz">UZ Airways</li>
+              <li class="aircraft-short">А320</li>
+            </ul>
+          </td>
+          <td>
+            02:00
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">S7 419</li>
+              <li class="airport"><span class="airport-name">а/п Ягельное, </span>Новый Уренгой</li>
+              <li class="aircraft">Boeing 737-800</li>
+              <li class="airline s7">S7 Airlines</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            02:00
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td>Бокал вина бесплатно</td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">U6 3015</li>
+              <li class="airport"><span class="airport-name">а/п Интернэшнл, </span>Шарм-эль-Шейх</li>
+              <li class="aircraft">Airbus А321</li>
+              <li class="airline ural">Уральские Авиалинии</li>
+              <li class="aircraft-short">А321</li>
+            </ul>
+          </td>
+          <td>
+            02:15
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">HY 606</li>
+              <li class="airport"><span class="airport-name">а/п Самарканд, </span>Самарканд</li>
+              <li class="aircraft">Airbus А320</li>
+              <li class="airline uz">UZ Airways</li>
+              <li class="aircraft-short">А320</li>
+            </ul>
+          </td>
+          <td>
+            02:45
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td>Скидки на следующие полёты!</td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">YC 173</li>
+              <li class="airport"><span class="airport-name">а/п Надым, </span>Надым</li>
+              <li class="aircraft">Boeing 737-400</li>
+              <li class="airline yamal">Ямал</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            03:05
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="departure">
+          <td>
+            <ul>
+              <li class="flight-number">YC 32</li>
+              <li class="airport"><span class="airport-name">а/п Салехард, </span>Салехард</li>
+              <li class="aircraft">Airbus А320</li>
+              <li class="airline yamal">Ямал</li>
+              <li class="aircraft-short">А320</li>
+            </ul>
+          </td>
+          <td>
+            03:10
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
 
 
-      <!-- Прибытие -->
+        <!-- Прибытие -->
 
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">7K 9786</li>
-            <li class="airport"><span class="airport-name">а/п Бургас, </span>Бургас</li>
-            <li class="aircraft">Airbus А321</li>
-            <li class="airline metrojet">Metrojet</li>
-            <li class="aircraft-short">А321</li>
-          </ul>
-        </td>
-        <td>
-          <strike>22:30, 20&nbsp;июля</strike>
-          01:31, 21&nbsp;июля
-        </td>
-        <td>
-          задерживается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">NN 342</li>
-            <li class="airport"><span class="airport-name">а/п Центральный, </span>Симферополь</li>
-            <li class="aircraft">Boeing 757-200</li>
-            <li class="airline vimavia">ВИМ-Авиа</li>
-            <li class="aircraft-short">B757</li>
-          </ul>
-        </td>
-        <td>
-          <strike>23:05</strike>
-          01:33
-        </td>
-        <td>
-          задерживается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">UN 37</li>
-            <li class="airport"><span class="airport-name">а/п Пулково, </span>Санкт-Петербург</li>
-            <li class="aircraft">Boeing 767-300</li>
-            <li class="airline transaero">Трансаэро</li>
-            <li class="aircraft-short">B767</li>
-          </ul>
-        </td>
-        <td>
-          <strike>23:15</strike>
-          02:10
-        </td>
-        <td>
-          задерживается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">AB 8100</li>
-            <li class="airport"><span class="airport-name">а/п Тегель, </span>Берлин</li>
-            <li class="aircraft">Boeing 737-800</li>
-            <li class="airline airberlin">Air Berlin</li>
-            <li class="aircraft-short">B737</li>
-          </ul>
-        </td>
-        <td>
-          <strike>01:05</strike>
-          01:08
-        </td>
-        <td>
-          прибыл
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">NN 164</li>
-            <li class="airport"><span class="airport-name">а/п Уйташ, </span>Махачкала</li>
-            <li class="aircraft">Boeing 757-200</li>
-            <li class="airline vimavia">ВИМ-Авиа</li>
-            <li class="aircraft-short">B757</li>
-          </ul>
-        </td>
-        <td>
-          <strike>01:10</strike>
-        </td>
-        <td>
-          отменён
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">HY 605</li>
-            <li class="airport"><span class="airport-name">а/п Самарканд, </span>Самарканд</li>
-            <li class="aircraft">Airbus А320</li>
-            <li class="airline uz">UZ Airways</li>
-            <li class="aircraft-short">А320</li>
-          </ul>
-        </td>
-        <td>
-          <strike>01:15</strike>
-          00:50
-        </td>
-        <td>
-          прибыл
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">LX 1324</li>
-            <li class="airport"><span class="airport-name">а/п Клотен, </span>Цюрих</li>
-            <li class="aircraft">Airbus А321</li>
-            <li class="airline swissair">SwissAir</li>
-            <li class="aircraft-short">А321</li>
-          </ul>
-        </td>
-        <td>
-          <strike>01:25</strike>
-          01:31
-        </td>
-        <td>
-          ожидается
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">YC 9364</li>
-            <li class="airport"><span class="airport-name">а/п Бургас, </span>Бургас</li>
-            <li class="aircraft">Airbus А320</li>
-            <li class="airline yamal">Ямал</li>
-            <li class="aircraft-short">А320</li>
-          </ul>
-        </td>
-        <td>
-          <strike>01:50</strike>
-        </td>
-        <td>
-          отменён
-        </td>
-        <td></td>
-      </tr>
-      <tr class="arrival">
-        <td>
-          <ul>
-            <li class="flight-number">ZF 3090</li>
-            <li class="airport"><span class="airport-name">а/п Хургада, </span>Хургада</li>
-            <li class="aircraft">Boeing 767-300</li>
-            <li class="airline s7">S7 Airlines</li>
-            <li class="aircraft-short">B767</li>
-          </ul>
-        </td>
-        <td>
-          <strike>02:55</strike>
-        </td>
-        <td>
-          отменён
-        </td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">7K 9786</li>
+              <li class="airport"><span class="airport-name">а/п Бургас, </span>Бургас</li>
+              <li class="aircraft">Airbus А321</li>
+              <li class="airline metrojet">Metrojet</li>
+              <li class="aircraft-short">А321</li>
+            </ul>
+          </td>
+          <td>
+            <strike>22:30, 20&nbsp;июля</strike>
+            01:31, 21&nbsp;июля
+          </td>
+          <td>
+            задерживается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">NN 342</li>
+              <li class="airport"><span class="airport-name">а/п Центральный, </span>Симферополь</li>
+              <li class="aircraft">Boeing 757-200</li>
+              <li class="airline vimavia">ВИМ-Авиа</li>
+              <li class="aircraft-short">B757</li>
+            </ul>
+          </td>
+          <td>
+            <strike>23:05</strike>
+            01:33
+          </td>
+          <td>
+            задерживается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">UN 37</li>
+              <li class="airport"><span class="airport-name">а/п Пулково, </span>Санкт-Петербург</li>
+              <li class="aircraft">Boeing 767-300</li>
+              <li class="airline transaero">Трансаэро</li>
+              <li class="aircraft-short">B767</li>
+            </ul>
+          </td>
+          <td>
+            <strike>23:15</strike>
+            02:10
+          </td>
+          <td>
+            задерживается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">AB 8100</li>
+              <li class="airport"><span class="airport-name">а/п Тегель, </span>Берлин</li>
+              <li class="aircraft">Boeing 737-800</li>
+              <li class="airline airberlin">Air Berlin</li>
+              <li class="aircraft-short">B737</li>
+            </ul>
+          </td>
+          <td>
+            <strike>01:05</strike>
+            01:08
+          </td>
+          <td>
+            прибыл
+          </td>
+          <td></td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">NN 164</li>
+              <li class="airport"><span class="airport-name">а/п Уйташ, </span>Махачкала</li>
+              <li class="aircraft">Boeing 757-200</li>
+              <li class="airline vimavia">ВИМ-Авиа</li>
+              <li class="aircraft-short">B757</li>
+            </ul>
+          </td>
+          <td>
+            <strike>01:10</strike>
+          </td>
+          <td>
+            отменён
+          </td>
+          <td></td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">HY 605</li>
+              <li class="airport"><span class="airport-name">а/п Самарканд, </span>Самарканд</li>
+              <li class="aircraft">Airbus А320</li>
+              <li class="airline uz">UZ Airways</li>
+              <li class="aircraft-short">А320</li>
+            </ul>
+          </td>
+          <td>
+            <strike>01:15</strike>
+            00:50
+          </td>
+          <td>
+            прибыл
+          </td>
+          <td>Тут и писать-то нечего</td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">LX 1324</li>
+              <li class="airport"><span class="airport-name">а/п Клотен, </span>Цюрих</li>
+              <li class="aircraft">Airbus А321</li>
+              <li class="airline swissair">SwissAir</li>
+              <li class="aircraft-short">А321</li>
+            </ul>
+          </td>
+          <td>
+            <strike>01:25</strike>
+            01:31
+          </td>
+          <td>
+            ожидается
+          </td>
+          <td></td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">YC 9364</li>
+              <li class="airport"><span class="airport-name">а/п Бургас, </span>Бургас</li>
+              <li class="aircraft">Airbus А320</li>
+              <li class="airline yamal">Ямал</li>
+              <li class="aircraft-short">А320</li>
+            </ul>
+          </td>
+          <td>
+            <strike>01:50</strike>
+          </td>
+          <td>
+            отменён
+          </td>
+          <td>Ещё какое-то описание</td>
+        </tr>
+        <tr class="arrival">
+          <td>
+            <ul>
+              <li class="flight-number">ZF 3090</li>
+              <li class="airport"><span class="airport-name">а/п Хургада, </span>Хургада</li>
+              <li class="aircraft">Boeing 767-300</li>
+              <li class="airline s7">S7 Airlines</li>
+              <li class="aircraft-short">B767</li>
+            </ul>
+          </td>
+          <td>
+            <strike>02:55</strike>
+          </td>
+          <td>
+            отменён
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>

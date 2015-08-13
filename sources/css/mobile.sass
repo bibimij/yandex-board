@@ -2,19 +2,77 @@ body
   font-family: Arial,Helvetica,sans-serif
   font-size: 16px
   min-width: 320px
+  box-sizing: border-box
+  position: relative
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 20px
+
+.content
+  overflow: hidden
+
+h1
+  position: fixed
+  background: #fff
+  width: 100%
+  margin: 0
+  padding: 20px 0 0
+  z-index: 1
+  top: 0
+  height: 100px
+
+[type=checkbox]
+  font-size: 16px
+
+label
+  font-size: 15px
+
+[type=checkbox], label
+  position: fixed
+  top: 70px
+  z-index: 1
+
+[for=departure-checkbox]
+  left: 40px
+
+#arrival-checkbox
+  left: 100px
+
+[for=arrival-checkbox]
+  left: 140px
 
 .board
   border: 0
+  table-layout: fixed
   border-collapse: collapse
   width: 100%
+  position: relative
+  top: 100px
 
   tbody
     tr
       &:nth-child(odd)
-        background: #eee
+        background: rgba(238, 238, 238, 0.5)
 
   th
-    border-bottom: 1px solid #aaa
+    height: 0
+    line-height: 0
+    padding-top: 0
+    padding-bottom: 0
+    color: transparent
+    border: none
+    white-space: nowrap
+
+    div
+      position: fixed
+      background: transparent
+      color: #000
+      top: 100px
+      line-height: normal
+      border-bottom: 1px solid #aaa
+      z-index: 1
+      width: 100%
 
   td, th
     text-align: left
@@ -61,11 +119,11 @@ body
 #departure-checkbox
   &:checked
     ~ .board
-      > tbody > .departure
+      tr.departure
         display: table-row
 
 #arrival-checkbox
   &:checked
     ~ .board
-      > tbody > .arrival
+      tr.arrival
         display: table-row

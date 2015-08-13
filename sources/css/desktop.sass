@@ -20,17 +20,19 @@
   tbody
     tr
       &:hover
-        background: #ddd
+        background: rgba(211, 211, 211, 0.5)
 
-  .airport-name
-    display: inline
+  ul
+    li
+      display: inline-block
 
-  .aircraft
-    display: block
+      &:after
+        content: '; '
 
-  .aircraft-short
-    display: none
+    .airline
+      &:after
+        content: ''
 
-  .airline
-    font-size: 16px
-    float: none
+  .arrival
+    .airport:after
+      content: '\21d8; '
