@@ -1,27 +1,35 @@
 @charset "UTF-8";
 /* line 1, ../../sources/css/desktop.sass */
-body {
-  font-family: Arial, Helvetica, sans-serif; }
-
-/* line 4, ../../sources/css/desktop.sass */
-.departure,
-.arrival {
-  display: none; }
-
-/* line 9, ../../sources/css/desktop.sass */
-.departure .airport:before {
-  content: "⇗";
-  margin-right: 5px; }
-
-/* line 14, ../../sources/css/desktop.sass */
-.arrival .airport:after {
-  content: "⇘";
-  margin-left: 5px; }
-
-/* line 21, ../../sources/css/desktop.sass */
-#departure-checkbox:checked ~ .board > tbody > .departure {
-  display: table-row; }
-
-/* line 27, ../../sources/css/desktop.sass */
-#arrival-checkbox:checked ~ .board > tbody > .arrival {
-  display: table-row; }
+.board {
+  overflow: hidden; }
+  /* line 4, ../../sources/css/desktop.sass */
+  .board td, .board th {
+    position: relative; }
+    /* line 7, ../../sources/css/desktop.sass */
+    .board td:hover::after, .board th:hover::after {
+      content: "";
+      position: absolute;
+      background: rgba(211, 211, 211, 0.5);
+      left: 0;
+      top: -5000px;
+      height: 10000px;
+      width: 100%;
+      z-index: -1; }
+    /* line 17, ../../sources/css/desktop.sass */
+    .board td:nth-child(4), .board th:nth-child(4) {
+      display: table-cell; }
+  /* line 22, ../../sources/css/desktop.sass */
+  .board tbody tr:hover {
+    background: rgba(211, 211, 211, 0.5); }
+  /* line 26, ../../sources/css/desktop.sass */
+  .board ul li {
+    display: inline-block; }
+    /* line 29, ../../sources/css/desktop.sass */
+    .board ul li:after {
+      content: "; "; }
+  /* line 33, ../../sources/css/desktop.sass */
+  .board ul .airline:after {
+    content: ""; }
+  /* line 37, ../../sources/css/desktop.sass */
+  .board .arrival .airport:after {
+    content: "⇘; "; }
