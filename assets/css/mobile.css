@@ -5,71 +5,142 @@ body {
   font-size: 16px;
   min-width: 320px;
   box-sizing: border-box;
-  padding: 20px; }
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: auto; }
 
-/* line 8, ../../sources/css/mobile.sass */
+/* line 13, ../../sources/css/mobile.sass */
+.fixed-float {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 128px;
+  background: #fff;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box; }
+
+/* line 24, ../../sources/css/mobile.sass */
+.border-bottom {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+  top: 108px; }
+
+/* line 29, ../../sources/css/mobile.sass */
+h1 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin: 20px 0 0;
+  font-size: 18px; }
+
+/* line 36, ../../sources/css/mobile.sass */
+[type=checkbox],
+label {
+  margin: 0;
+  position: fixed;
+  z-index: 1; }
+
+/* line 42, ../../sources/css/mobile.sass */
+[type=checkbox] {
+  top: 70px;
+  font-size: 16px; }
+
+/* line 46, ../../sources/css/mobile.sass */
+label {
+  top: 66px;
+  cursor: pointer; }
+
+/* line 50, ../../sources/css/mobile.sass */
+[for=departure-checkbox] {
+  left: 40px; }
+
+/* line 53, ../../sources/css/mobile.sass */
 #arrival-checkbox {
-  left: 100px; }
+  left: 130px; }
 
-/* line 11, ../../sources/css/mobile.sass */
+/* line 56, ../../sources/css/mobile.sass */
 [for=arrival-checkbox] {
-  left: 140px; }
+  left: 150px; }
 
-/* line 14, ../../sources/css/mobile.sass */
+/* line 59, ../../sources/css/mobile.sass */
+.fixed {
+  position: relative; }
+
+/* line 62, ../../sources/css/mobile.sass */
 .board {
   border: 0;
   border-collapse: collapse;
-  width: 100%; }
-  /* line 21, ../../sources/css/mobile.sass */
+  width: 100%;
+  margin-top: 91px; }
+  /* line 69, ../../sources/css/mobile.sass */
+  .board th div {
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+    padding: 5px;
+    width: 100%; }
+  /* line 78, ../../sources/css/mobile.sass */
   .board tbody tr:nth-child(odd) {
     background: rgba(238, 238, 238, 0.5); }
-  /* line 24, ../../sources/css/mobile.sass */
+  /* line 81, ../../sources/css/mobile.sass */
+  .board td {
+    padding: 5px; }
+  /* line 84, ../../sources/css/mobile.sass */
   .board td, .board th {
+    position: relative;
     text-align: left;
-    padding: 5px;
     vertical-align: top; }
-    /* line 30, ../../sources/css/mobile.sass */
+    /* line 90, ../../sources/css/mobile.sass */
     .board td:nth-child(2) strike, .board th:nth-child(2) strike {
       color: #aaa;
       display: block; }
-    /* line 34, ../../sources/css/mobile.sass */
+    /* line 94, ../../sources/css/mobile.sass */
     .board td:nth-child(4), .board th:nth-child(4) {
       display: none; }
-  /* line 37, ../../sources/css/mobile.sass */
+  /* line 97, ../../sources/css/mobile.sass */
   .board ul {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-  /* line 42, ../../sources/css/mobile.sass */
+  /* line 102, ../../sources/css/mobile.sass */
   .board .airport-name {
     display: none; }
-  /* line 45, ../../sources/css/mobile.sass */
+  /* line 105, ../../sources/css/mobile.sass */
   .board .aircraft {
     display: none; }
-  /* line 48, ../../sources/css/mobile.sass */
+  /* line 108, ../../sources/css/mobile.sass */
   .board .airline {
     font-size: 0;
     float: left; }
 
-/* line 52, ../../sources/css/mobile.sass */
+/* line 112, ../../sources/css/mobile.sass */
 .departure,
 .arrival {
   display: none; }
 
-/* line 57, ../../sources/css/mobile.sass */
+/* line 117, ../../sources/css/mobile.sass */
 .departure .airport:before {
   content: "⇗";
   margin-right: 5px; }
 
-/* line 62, ../../sources/css/mobile.sass */
+/* line 122, ../../sources/css/mobile.sass */
 .arrival .airport:after {
   content: "⇘";
   margin-left: 5px; }
 
-/* line 69, ../../sources/css/mobile.sass */
+/* line 129, ../../sources/css/mobile.sass */
 #departure-checkbox:checked ~ .board tr.departure {
   display: table-row; }
 
-/* line 75, ../../sources/css/mobile.sass */
+/* line 135, ../../sources/css/mobile.sass */
 #arrival-checkbox:checked ~ .board tr.arrival {
   display: table-row; }
+
+/* line 138, ../../sources/css/mobile.sass */
+.bottom-placeholder {
+  height: 20px; }
