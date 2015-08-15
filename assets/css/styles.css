@@ -31,7 +31,7 @@ body {
   top: 108px; }
 
 /* line 29, ../../sources/css/mobile.sass */
-h1 {
+h1.title {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -202,9 +202,53 @@ label {
 .yamal:before {
   background-image: url("http://yamal.aero/favicon.ico"); }
 
+/* line 1, ../../sources/css/popup.sass */
+.popup-wrapper {
+  display: none;
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+  /* line 12, ../../sources/css/popup.sass */
+  .popup-wrapper.active {
+    display: block; }
+
+/* line 15, ../../sources/css/popup.sass */
+.popup {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  z-index: 10; }
+  /* line 24, ../../sources/css/popup.sass */
+  .popup:before {
+    content: "×";
+    font-family: serif;
+    cursor: pointer;
+    position: absolute;
+    right: 19px;
+    top: 27px;
+    font-size: 35px;
+    line-height: 0; }
+  /* line 35, ../../sources/css/popup.sass */
+  .popup h2 {
+    margin: 0 0 10px; }
+  /* line 38, ../../sources/css/popup.sass */
+  .popup ul {
+    margin: 0 0 20px; }
+  /* line 41, ../../sources/css/popup.sass */
+  .popup p:last-child {
+    margin: 0; }
+
 @media (min-width: 768px) {
   /* line 1, ../../sources/css/tablet.sass */
-  h1 {
+  h1.title {
     font-size: 30px; }
 
   /* line 5, ../../sources/css/tablet.sass */
@@ -237,18 +281,21 @@ label {
     /* line 15, ../../sources/css/desktop.sass */
     .board td:nth-child(4), .board th:nth-child(4) {
       display: table-cell; }
-    /* line 20, ../../sources/css/desktop.sass */
-    .board tbody tr:hover {
-      background: rgba(211, 211, 211, 0.5); }
-    /* line 24, ../../sources/css/desktop.sass */
+    /* line 19, ../../sources/css/desktop.sass */
+    .board tbody tr {
+      cursor: pointer; }
+      /* line 22, ../../sources/css/desktop.sass */
+      .board tbody tr:hover {
+        background: rgba(211, 211, 211, 0.5); }
+    /* line 26, ../../sources/css/desktop.sass */
     .board ul li {
       display: inline-block; }
-      /* line 27, ../../sources/css/desktop.sass */
+      /* line 29, ../../sources/css/desktop.sass */
       .board ul li:after {
         content: "; "; }
-    /* line 31, ../../sources/css/desktop.sass */
+    /* line 33, ../../sources/css/desktop.sass */
     .board ul .airline:after {
       content: ""; }
-    /* line 35, ../../sources/css/desktop.sass */
+    /* line 37, ../../sources/css/desktop.sass */
     .board .arrival .airport:after {
       content: "⇘; "; } }

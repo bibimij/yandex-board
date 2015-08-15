@@ -11,7 +11,7 @@
     <div class="border-bottom"></div>
   </div>
 
-  <h1>Табло аэропорта Домодедово. 21 июля, 01:10</h1>
+  <h1 class="title">Табло аэропорта Домодедово. 21 июля, 01:10</h1>
 
   <input type="checkbox" name="type" id="departure-checkbox" checked><label for="departure-checkbox">⇗ вылет</label>
   <input type="checkbox" name="type" id="arrival-checkbox" checked><label for="arrival-checkbox">прилёт ⇘</label>
@@ -474,6 +474,14 @@
     </tbody>
   </table>
 
+  <div class="popup-wrapper">
+    <div class="popup"></div>
+  </div>
+
   <div class="bottom-placeholder"></div>
+  <script src="./assets/js/popup.js"></script>
+  <script>
+    var popup = new Popup();
+  </script>
 </body>
 </html>

@@ -15,18 +15,21 @@
   /* line 15, ../../sources/css/desktop.sass */
   .board td:nth-child(4), .board th:nth-child(4) {
     display: table-cell; }
-  /* line 20, ../../sources/css/desktop.sass */
-  .board tbody tr:hover {
-    background: rgba(211, 211, 211, 0.5); }
-  /* line 24, ../../sources/css/desktop.sass */
+  /* line 19, ../../sources/css/desktop.sass */
+  .board tbody tr {
+    cursor: pointer; }
+    /* line 22, ../../sources/css/desktop.sass */
+    .board tbody tr:hover {
+      background: rgba(211, 211, 211, 0.5); }
+  /* line 26, ../../sources/css/desktop.sass */
   .board ul li {
     display: inline-block; }
-    /* line 27, ../../sources/css/desktop.sass */
+    /* line 29, ../../sources/css/desktop.sass */
     .board ul li:after {
       content: "; "; }
-  /* line 31, ../../sources/css/desktop.sass */
+  /* line 33, ../../sources/css/desktop.sass */
   .board ul .airline:after {
     content: ""; }
-  /* line 35, ../../sources/css/desktop.sass */
+  /* line 37, ../../sources/css/desktop.sass */
   .board .arrival .airport:after {
     content: "⇘; "; }
