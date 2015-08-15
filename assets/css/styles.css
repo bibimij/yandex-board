@@ -5,133 +5,145 @@ body {
   font-size: 16px;
   min-width: 320px;
   box-sizing: border-box;
-  position: relative;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  width: 100%;
   margin: 0;
-  padding: 20px; }
+  overflow-y: auto; }
 
-/* line 12, ../../sources/css/mobile.sass */
-.content {
-  overflow: hidden; }
-
-/* line 15, ../../sources/css/mobile.sass */
-h1 {
+/* line 13, ../../sources/css/mobile.sass */
+.fixed-float {
   position: fixed;
-  background: #fff;
-  width: 100%;
-  margin: 0;
-  padding: 20px 0 0;
-  z-index: 1;
   top: 0;
-  height: 100px; }
+  left: 0;
+  width: 100%;
+  height: 128px;
+  background: #fff;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box; }
 
-/* line 25, ../../sources/css/mobile.sass */
-[type=checkbox] {
-  font-size: 16px; }
+/* line 24, ../../sources/css/mobile.sass */
+.border-bottom {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+  top: 108px; }
 
-/* line 28, ../../sources/css/mobile.sass */
-label {
-  font-size: 15px; }
-
-/* line 31, ../../sources/css/mobile.sass */
-[type=checkbox], label {
+/* line 29, ../../sources/css/mobile.sass */
+h1.title {
   position: fixed;
-  top: 70px;
-  z-index: 1; }
+  top: 0;
+  z-index: 1;
+  margin: 20px 0 0;
+  font-size: 18px; }
 
 /* line 36, ../../sources/css/mobile.sass */
+[type=checkbox],
+label {
+  margin: 0;
+  position: fixed;
+  z-index: 1; }
+
+/* line 42, ../../sources/css/mobile.sass */
+[type=checkbox] {
+  top: 70px;
+  font-size: 16px; }
+
+/* line 46, ../../sources/css/mobile.sass */
+label {
+  top: 66px;
+  cursor: pointer; }
+
+/* line 50, ../../sources/css/mobile.sass */
 [for=departure-checkbox] {
   left: 40px; }
 
-/* line 39, ../../sources/css/mobile.sass */
+/* line 53, ../../sources/css/mobile.sass */
 #arrival-checkbox {
-  left: 100px; }
+  left: 130px; }
 
-/* line 42, ../../sources/css/mobile.sass */
+/* line 56, ../../sources/css/mobile.sass */
 [for=arrival-checkbox] {
-  left: 140px; }
+  left: 150px; }
 
-/* line 45, ../../sources/css/mobile.sass */
+/* line 59, ../../sources/css/mobile.sass */
+.fixed {
+  position: relative; }
+
+/* line 62, ../../sources/css/mobile.sass */
 .board {
   border: 0;
-  table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
-  position: relative;
-  top: 100px; }
-  /* line 55, ../../sources/css/mobile.sass */
+  margin-top: 91px; }
+  /* line 69, ../../sources/css/mobile.sass */
+  .board th div {
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+    padding: 5px;
+    width: 100%; }
+  /* line 78, ../../sources/css/mobile.sass */
   .board tbody tr:nth-child(odd) {
     background: rgba(238, 238, 238, 0.5); }
-  /* line 58, ../../sources/css/mobile.sass */
-  .board th {
-    height: 0;
-    line-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: transparent;
-    border: none;
-    white-space: nowrap; }
-    /* line 67, ../../sources/css/mobile.sass */
-    .board th div {
-      position: fixed;
-      background: transparent;
-      color: #000;
-      top: 100px;
-      line-height: normal;
-      border-bottom: 1px solid #aaa;
-      z-index: 1;
-      width: 100%; }
-  /* line 77, ../../sources/css/mobile.sass */
+  /* line 81, ../../sources/css/mobile.sass */
+  .board td {
+    padding: 5px; }
+  /* line 84, ../../sources/css/mobile.sass */
   .board td, .board th {
+    position: relative;
     text-align: left;
-    padding: 5px;
     vertical-align: top; }
-    /* line 83, ../../sources/css/mobile.sass */
+    /* line 90, ../../sources/css/mobile.sass */
     .board td:nth-child(2) strike, .board th:nth-child(2) strike {
       color: #aaa;
       display: block; }
-    /* line 87, ../../sources/css/mobile.sass */
+    /* line 94, ../../sources/css/mobile.sass */
     .board td:nth-child(4), .board th:nth-child(4) {
       display: none; }
-  /* line 90, ../../sources/css/mobile.sass */
+  /* line 97, ../../sources/css/mobile.sass */
   .board ul {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-  /* line 95, ../../sources/css/mobile.sass */
+  /* line 102, ../../sources/css/mobile.sass */
   .board .airport-name {
     display: none; }
-  /* line 98, ../../sources/css/mobile.sass */
+  /* line 105, ../../sources/css/mobile.sass */
   .board .aircraft {
     display: none; }
-  /* line 101, ../../sources/css/mobile.sass */
+  /* line 108, ../../sources/css/mobile.sass */
   .board .airline {
     font-size: 0;
     float: left; }
 
-/* line 105, ../../sources/css/mobile.sass */
+/* line 112, ../../sources/css/mobile.sass */
 .departure,
 .arrival {
   display: none; }
 
-/* line 110, ../../sources/css/mobile.sass */
+/* line 117, ../../sources/css/mobile.sass */
 .departure .airport:before {
   content: "⇗";
   margin-right: 5px; }
 
-/* line 115, ../../sources/css/mobile.sass */
+/* line 122, ../../sources/css/mobile.sass */
 .arrival .airport:after {
   content: "⇘";
   margin-left: 5px; }
 
-/* line 122, ../../sources/css/mobile.sass */
+/* line 129, ../../sources/css/mobile.sass */
 #departure-checkbox:checked ~ .board tr.departure {
   display: table-row; }
 
-/* line 128, ../../sources/css/mobile.sass */
+/* line 135, ../../sources/css/mobile.sass */
 #arrival-checkbox:checked ~ .board tr.arrival {
   display: table-row; }
+
+/* line 138, ../../sources/css/mobile.sass */
+.bottom-placeholder {
+  height: 20px; }
 
 /* line 1, ../../sources/css/airlines.sass */
 .airline:before {
@@ -190,17 +202,71 @@ label {
 .yamal:before {
   background-image: url("http://yamal.aero/favicon.ico"); }
 
+/* line 1, ../../sources/css/popup.sass */
+.popup-wrapper {
+  display: none;
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+  /* line 12, ../../sources/css/popup.sass */
+  .popup-wrapper.active {
+    display: block; }
+
+/* line 15, ../../sources/css/popup.sass */
+.popup {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    /* line 15, ../../sources/css/popup.sass */
+    .popup {
+      width: 600px;
+      margin-left: -300px;
+      left: 50%; } }
+  /* line 29, ../../sources/css/popup.sass */
+  .popup:before {
+    content: "×";
+    font-family: serif;
+    cursor: pointer;
+    position: absolute;
+    right: 19px;
+    top: 27px;
+    font-size: 35px;
+    line-height: 0; }
+  /* line 40, ../../sources/css/popup.sass */
+  .popup h2 {
+    margin: 0 0 10px; }
+  /* line 43, ../../sources/css/popup.sass */
+  .popup ul {
+    margin: 0 0 20px; }
+  /* line 46, ../../sources/css/popup.sass */
+  .popup p:last-child {
+    margin: 0; }
+
 @media (min-width: 768px) {
-  /* line 2, ../../sources/css/tablet.sass */
+  /* line 1, ../../sources/css/tablet.sass */
+  h1.title {
+    font-size: 30px; }
+
+  /* line 5, ../../sources/css/tablet.sass */
   .board .airport-name {
     display: inline; }
-  /* line 5, ../../sources/css/tablet.sass */
+  /* line 8, ../../sources/css/tablet.sass */
   .board .aircraft {
     display: initial; }
-  /* line 8, ../../sources/css/tablet.sass */
+  /* line 11, ../../sources/css/tablet.sass */
   .board .aircraft-short {
     display: none; }
-  /* line 11, ../../sources/css/tablet.sass */
+  /* line 14, ../../sources/css/tablet.sass */
   .board .airline {
     font-size: 16px;
     float: none; } }
@@ -208,25 +274,25 @@ label {
   /* line 1, ../../sources/css/desktop.sass */
   .board {
     overflow: hidden; }
-    /* line 4, ../../sources/css/desktop.sass */
-    .board td, .board th {
-      position: relative; }
-      /* line 7, ../../sources/css/desktop.sass */
-      .board td:hover::after, .board th:hover::after {
-        content: "";
-        position: absolute;
-        background: rgba(211, 211, 211, 0.5);
-        left: 0;
-        top: -5000px;
-        height: 10000px;
-        width: 100%;
-        z-index: -1; }
-      /* line 17, ../../sources/css/desktop.sass */
-      .board td:nth-child(4), .board th:nth-child(4) {
-        display: table-cell; }
-    /* line 22, ../../sources/css/desktop.sass */
-    .board tbody tr:hover {
-      background: rgba(211, 211, 211, 0.5); }
+    /* line 5, ../../sources/css/desktop.sass */
+    .board td:hover::after, .board th:hover::after {
+      content: "";
+      position: absolute;
+      background: rgba(211, 211, 211, 0.5);
+      left: 0;
+      top: -5000px;
+      height: 10000px;
+      width: 100%;
+      z-index: -1; }
+    /* line 15, ../../sources/css/desktop.sass */
+    .board td:nth-child(4), .board th:nth-child(4) {
+      display: table-cell; }
+    /* line 19, ../../sources/css/desktop.sass */
+    .board tbody tr {
+      cursor: pointer; }
+      /* line 22, ../../sources/css/desktop.sass */
+      .board tbody tr:hover {
+        background: rgba(211, 211, 211, 0.5); }
     /* line 26, ../../sources/css/desktop.sass */
     .board ul li {
       display: inline-block; }

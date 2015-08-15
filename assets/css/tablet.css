@@ -1,0 +1,17 @@
+/* line 1, ../../sources/css/tablet.sass */
+h1.title {
+  font-size: 30px; }
+
+/* line 5, ../../sources/css/tablet.sass */
+.board .airport-name {
+  display: inline; }
+/* line 8, ../../sources/css/tablet.sass */
+.board .aircraft {
+  display: initial; }
+/* line 11, ../../sources/css/tablet.sass */
+.board .aircraft-short {
+  display: none; }
+/* line 14, ../../sources/css/tablet.sass */
+.board .airline {
+  font-size: 16px;
+  float: none; }

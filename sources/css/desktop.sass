@@ -2,8 +2,6 @@
   overflow: hidden
 
   td, th
-    position: relative
-
     &:hover::after
       content: ''
       position: absolute
@@ -19,6 +17,8 @@
 
   tbody
     tr
+      cursor: pointer
+
       &:hover
         background: rgba(211, 211, 211, 0.5)
 

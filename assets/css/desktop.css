@@ -2,25 +2,25 @@
 /* line 1, ../../sources/css/desktop.sass */
 .board {
   overflow: hidden; }
-  /* line 4, ../../sources/css/desktop.sass */
-  .board td, .board th {
-    position: relative; }
-    /* line 7, ../../sources/css/desktop.sass */
-    .board td:hover::after, .board th:hover::after {
-      content: "";
-      position: absolute;
-      background: rgba(211, 211, 211, 0.5);
-      left: 0;
-      top: -5000px;
-      height: 10000px;
-      width: 100%;
-      z-index: -1; }
-    /* line 17, ../../sources/css/desktop.sass */
-    .board td:nth-child(4), .board th:nth-child(4) {
-      display: table-cell; }
-  /* line 22, ../../sources/css/desktop.sass */
-  .board tbody tr:hover {
-    background: rgba(211, 211, 211, 0.5); }
+  /* line 5, ../../sources/css/desktop.sass */
+  .board td:hover::after, .board th:hover::after {
+    content: "";
+    position: absolute;
+    background: rgba(211, 211, 211, 0.5);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1; }
+  /* line 15, ../../sources/css/desktop.sass */
+  .board td:nth-child(4), .board th:nth-child(4) {
+    display: table-cell; }
+  /* line 19, ../../sources/css/desktop.sass */
+  .board tbody tr {
+    cursor: pointer; }
+    /* line 22, ../../sources/css/desktop.sass */
+    .board tbody tr:hover {
+      background: rgba(211, 211, 211, 0.5); }
   /* line 26, ../../sources/css/desktop.sass */
   .board ul li {
     display: inline-block; }
