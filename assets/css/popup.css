@@ -19,11 +19,17 @@
   background: #fff;
   padding: 20px;
   position: absolute;
-  left: 50%;
-  width: 600px;
-  margin-left: -300px;
-  z-index: 10; }
-  /* line 24, ../../sources/css/popup.sass */
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    /* line 15, ../../sources/css/popup.sass */
+    .popup {
+      width: 600px;
+      margin-left: -300px;
+      left: 50%; } }
+  /* line 29, ../../sources/css/popup.sass */
   .popup:before {
     content: "×";
     font-family: serif;
@@ -33,12 +39,12 @@
     top: 27px;
     font-size: 35px;
     line-height: 0; }
-  /* line 35, ../../sources/css/popup.sass */
+  /* line 40, ../../sources/css/popup.sass */
   .popup h2 {
     margin: 0 0 10px; }
-  /* line 38, ../../sources/css/popup.sass */
+  /* line 43, ../../sources/css/popup.sass */
   .popup ul {
     margin: 0 0 20px; }
-  /* line 41, ../../sources/css/popup.sass */
+  /* line 46, ../../sources/css/popup.sass */
   .popup p:last-child {
     margin: 0; }
