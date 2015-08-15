@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* line 1, ../../sources/css/popup.sass */
+.popup-wrapper {
+  display: none;
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+  /* line 12, ../../sources/css/popup.sass */
+  .popup-wrapper.active {
+    display: block; }
+
+/* line 15, ../../sources/css/popup.sass */
+.popup {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  z-index: 10; }
+  /* line 24, ../../sources/css/popup.sass */
+  .popup:before {
+    content: "×";
+    font-family: serif;
+    cursor: pointer;
+    position: absolute;
+    right: 19px;
+    top: 27px;
+    font-size: 35px;
+    line-height: 0; }
+  /* line 35, ../../sources/css/popup.sass */
+  .popup h2 {
+    margin: 0 0 10px; }
+  /* line 38, ../../sources/css/popup.sass */
+  .popup ul {
+    margin: 0 0 20px; }
+  /* line 41, ../../sources/css/popup.sass */
+  .popup p:last-child {
+    margin: 0; }

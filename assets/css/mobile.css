@@ -31,7 +31,7 @@ body {
   top: 108px; }
 
 /* line 29, ../../sources/css/mobile.sass */
-h1 {
+h1.title {
   position: fixed;
   top: 0;
   z-index: 1;
